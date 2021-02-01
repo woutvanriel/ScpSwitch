@@ -164,7 +164,7 @@ namespace ScpSwitch.Commands
             for (int i = 0; i < EventHandlers.plugin.Config.FreezeTime; i++)
             {
                 ply.EnableEffect(Exiled.API.Enums.EffectType.Ensnared);
-                ply.Broadcast(2, $"<color=red>YOU WILL BE UNFROZEN IN {EventHandlers.plugin.Config.FreezeTime - i} SECONDS</color>");
+                ply.Broadcast(1, $"<color=red>YOU WILL BE UNFROZEN IN {EventHandlers.plugin.Config.FreezeTime - i} SECONDS</color>");
                 await Task.Delay(TimeSpan.FromSeconds(1));
             }
             ply.ClearBroadcasts();
